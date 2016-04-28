@@ -1,0 +1,17 @@
+nav{
+	position: relative;
+	float: right;
+	width: 260px;
+	line-height: 3.75;
+	a{
+		float: left;
+		color: $color-header;
+		font-family: $font-nav;
+		font-size: $font-size-base;
+		padding:{
+			top: 12px;
+			bottom: 12px;
+			right: 13px;
+		} 
+	}
+}
