@@ -1,151 +1,190 @@
 #backscreen{
-	position: relative;
-	float: left;
-	width: 100%;
-	height: 650px;
-	background-color: $color-background;
-	background:{
-		repeat: no-repeat;
-		size: 100% 100%;
-	}
-	h2{
-		font-family: $font-nav;
-		font-size: 2*$font-size-base;
-		text-align: center;
-		padding-top: 200px;
-		line-height: 2*$grid-leading;
-		color: $color-header;
-	}
-	h5{
-		font-family: $font-nav;
-		text-align: center;
-		color: $color-header;
-	}
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 690px;
+    background-color: $color-background;
+    background:{
+        repeat: no-repeat;
+        size: 100% 100%;
+    }
+    h2{
+        font-family: $font-nav;
+        font-size: 2*$font-size-base;
+        text-align: center;
+        padding-top: 200px;
+        line-height: 2*$grid-leading;
+        color: $color-header;
+    }
+    h5{
+        font-family: $font-nav;
+        text-align: center;
+        color: $color-header;
+    }
 }
 
 #readmore{
-	position: relative;
-	float: left;
-	margin: auto;
-	width: 100%;
-	h2{
-		text-align: center;
-		font-family: $font-header;
-	}
-	img{
-		position: relative;
-		float: left;
-		padding-top: 20px;
-		padding-left: 30%;
-		width: 100px;
-	}
-	div{
-		position: relative;
-		float: left;
-		width: 35%;
-		height: 80px;
-		line-height: $font-size-base;
-		padding-left: 20px;
-		padding-top: 35px;
-		font-family: $font-nav;
-	}
-	h3{
-		text-align: center;
-		font-family: $font-nav;
-	}
-	button{
-		position: relative;
-		width: 20%;
-		margin:{
-			left: 40%;
-			top: $grid-leading;
-			bottom: $grid-leading;
-		}
-		border-radius: 10px;
-		border: none;
-		background-color: red;
-		font-family: $font-header; 
-		font-size: $font-size-base;
-		text-align: center;
-		padding: 10px;
-		cursor: pointer;
-	}
+    position: relative;
+    float: left;
+    margin: auto;
+    width: 100%;
+    h2{
+        text-align: center;
+        font-family: $font-header;
+    }
+    img{
+        position: relative;
+        float: left;
+        padding-top: 20px;
+        padding-left: 30%;
+        width: 100px;
+    }
+    div{
+        position: relative;
+        float: left;
+        width: 35%;
+        height: 80px;
+        line-height: $font-size-base;
+        padding-left: 20px;
+        padding-top: 35px;
+        font-family: $font-nav;
+    }
+    h3{
+        text-align: center;
+        font-family: $font-nav;
+    }
+    button{
+        position: relative;
+        width: 20%;
+        margin:{
+            left: 40%;
+            top: $grid-leading;
+            bottom: $grid-leading;
+        }
+        border-radius: 10px;
+        border: none;
+        background-color: red;
+        font-family: $font-header; 
+        font-size: $font-size-base;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
 }
 
 #books{
-	position: relative;
-	float: left;
-	background-color: #e2e2e2;
-	text-align: center;
-	h2{
-		font-family: $font-header;
-	}
-	h3{
-		width: 80%;
-		margin: auto;
-		font-family: $font-nav;
-		border-bottom: 1px solid red;
-	}
-	.scroll-feature{
-	    width: 60%;
-	    margin: auto;
-	    margin-top: 2%;
-	    margin-bottom: 1%;
-	    .scroll{
-			white-space: nowrap;
-		    overflow-x: scroll;
-		    overflow-y: hidden;
-		    img {
-				width: 18%;
-			    top: 0;
-			    z-index: 0;
-			    -webkit-transition: all 100ms;
-			    transition: all 100ms;
-			    position: relative;
-			}
-		}
-		
-	}
+    position: relative;
+    float: left;
+    background-color: #e2e2e2;
+    text-align: center;
+    h2{
+        font-family: $font-header;
+    }
+    h3{
+        width: 80%;
+        margin: auto;
+        font-family: $font-nav;
+        border-bottom: 1px solid red;
+    }
+    .scroll-feature{
+        width: 60%;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        .scroll{
+            white-space: nowrap;
+            overflow-x: scroll;
+            img {
+                width: 18%;
+                top: 0;
+                z-index: 0;
+                -webkit-transition: all 100ms;
+                transition: all 100ms;
+                position: relative;
+            }
+        }
+        
+    }
 
 }
 
 #updates{
-	position: relative;
-	float: left;
-	width: 100%;
-	margin: auto;
-	h2{
-		text-align: center;
-		font-family: $font-header;
-	}
-	.slide-feature{
-		width: 60%;
-		margin: auto;
-		.slide{
-			white-space: nowrap;
-			overflow:{
-				x: scroll;
-				y: hidden;
-			}
-			div{
-				position: relative;
-				width: 100%;
-				float: left;
-				img{
-					float: left;
-					width: 30%;
-				}
-				p{
-					float: left;
-					font-weight: bold;
-					font-family: $font-header;
-					// margin-top: 10px;
-				}
-				// p{
-				// 	float: left;
-				// 	width: 40%;
-				// }
-			}
-		}
-	}
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: auto;
+    h2{
+        text-align: center;
+        font-family: $font-header;
+    }
+    #container{
+        width: 900px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        margin: auto;
+        #slider{
+            width: 2700px;
+            transform: translate3d(0, 0, 0);
+            transition: transform .5s ease-in-out;
+            .content{
+                // position: absolute;
+                // left: 100%;
+                width: 900px;
+                float: left;
+                // cursor: pointer;
+                // top: 0;
+                // opacity: 0;
+                float: left;
+                white-space: normal;
+                img{
+                    float: left;
+                    // width: 20%;
+                    margin-right: 10px;
+                 }
+                 span{
+                    float: left;
+                    font-weight: bold;
+                    font-family: $font-header;
+                    // margin-top: 10px;
+                 }
+                 p{
+                    float: left;
+                    width: 75%;
+                    text-align: justify;
+                 }
+            }
+        }
+    }
+    #nav-links{
+        text-align: center;
+        width: 100%;
+        ul{
+            display: inline-block;
+            li{
+                float: left;
+                text-align: center;
+                margin-left: 10px;
+                cursor: pointer;
+                background-color: black;
+                padding: 5px;
+                border-radius: 100%;
+                border: black 5px solid;
+
+                &:hover{
+                    background-color: #FFFF00;
+                }
+
+                &.active{
+                    background-color: #333333;
+                    color: #FFFFFF;
+                    outline-width: 7px;
+
+                    &:hover{
+                        background-color: #484848;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
 }

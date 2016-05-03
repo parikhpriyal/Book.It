@@ -8,7 +8,7 @@ footer{
 	div{
 		width: 80%;
 		margin: auto;
-		margin-bottom: 1%;
+		padding-bottom: 1%;
 		a{
 			text-decoration: none;
 			padding:{
@@ -20,8 +20,8 @@ footer{
 		}
 		border-bottom: 1px solid red; 
 	}
-	span{
+	p{
 		font-family: $font-nav;
-		padding-bottom: 2%;
+		margin-top: 2%;
 	}
 }
