@@ -8,5 +8,6 @@ var button,
     name,
     password,
     links,
-    items,
-    slider;
+    item,
+    bullet,
+    bulletLinks;
