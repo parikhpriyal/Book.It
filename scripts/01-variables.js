@@ -8,6 +8,5 @@ var button,
     name,
     password,
     links,
-    item,
-    bullet,
-    bulletLinks;
+    windo,
+    bulletLink;

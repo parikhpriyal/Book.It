@@ -26,60 +26,24 @@ function loadnew(){
 }
 
 //content slider
-// function slideshow(){
-//     for(bullet = 0; bullet < links.length; bullet++){
-//         if (0 === this.parentNode.compareDocumentPosition(bulletLinks[bullet])) {
-//             item.style.marginLeft = '0px';
-//             // index = bullet;
-//             console.log(bullet);
-//         }
-//     }
+function slideshow(e){
+    for(var i = 0; i < links.length; i++){
+        links[i].classList.remove('active');
+    }
 
-//     // switch (index){
-//     //     case 0:
-//     //         item.style.marginLeft = '0px';
-//     //         break;
-//     //     case 1:
-//     //         item.style.marginLeft = '-720px';
-//     //         break;
-//     //     case 2:
-//     //         item.style.marginLeft = '-1440px';   
-//     //         break;
-//     //     default:
-//     //         item.style.marginLeft = '0px';
-//     // }
+    var clickedLink = e.target;
+    bulletLink = clickedLink.currentTarget;
 
-//     // if(links[0].clicked == true){
-//     //     item.style.marginLeft = '0px';
-//     // }else if (links[1].clicked == true){
-//     //     item.style.marginLeft = '-720px';
-//     // }else if (links[2].clicked == true){
-//     //     item.style.marginLeft = '-1440px';
-//     // }
-// }
-
-function slideshowOne(){
-    item.style.marginLeft = '0px';
-    // items[0].style.marginLeft = '0px';
-    // items[1].style.marginLeft = '720px';
-    // items[2].style.marginLeft = '1440px';
+    clickedLink.classList.add('active');
+    
+    if(0 === bulletLink){
+        windo.style.marginLeft = '0px';
+    }else if (1 === bulletLink){
+        windo.style.marginLeft = '-720px';
+    }else{
+        windo.style.marginLeft = '-1440px';
+    }
 }
-
-function slideshowTwo(){
-    item.style.marginLeft = '-720px';
-    // items[0].style.marginLeft = '-720px';
-    // items[1].style.marginLeft = '0px';
-    // items[2].style.marginLeft = '720px';   
-}
-
-function slideshowThree(){
-    item.style.marginLeft = '-1440px';
-    // items[0].style.marginLeft = '-1440px';
-    // items[1].style.marginLeft = '-720px';
-    // items[2].style.marginLeft = '0px';
-}
-
-
 
 // open how.html in new window on button click
 function pageNew(){
