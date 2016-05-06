@@ -1,27 +1,27 @@
 footer{
-	position: relative;
-	float: left;	
-	width: 100%;
-	margin-top: 2%;
-	// background-color: red;
-	text-align: center;
-	div{
-		width: 80%;
-		margin: auto;
-		padding-bottom: 1%;
-		a{
-			text-decoration: none;
-			padding:{
-				left: 5%;
-				right: 5%;
-			}
-			font-family: $font-nav;
-			color: black;
-		}
-		border-bottom: 1px solid red; 
-	}
-	p{
-		font-family: $font-nav;
-		margin-top: 2%;
-	}
+    position: relative;
+    float: left;    
+    width: 100%;
+    margin-top: 4%;
+    text-align: center;
+    font-size: $font-size-base;
+    div{
+        width: 60%;
+        margin: auto;
+        padding-bottom: 1%;
+        a{
+            text-decoration: none;
+            padding:{
+                left: 2.5%;
+                right: 2.5%;
+            }
+            font-family: $font-nav;
+            color: black;
+        }
+        border-bottom: 1px solid red; 
+    }
+    p{
+        font-family: $font-nav;
+        margin-top: 1%;
+    }
 }

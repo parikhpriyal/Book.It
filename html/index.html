@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Book.It</title>
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="shortcut icon" href="img/logo1.png">
     </head>
     <body>
         <!-- header and navigation -->
@@ -11,23 +12,8 @@
             <!-- logo -->
             <a href="index.html"><img id="logo" src="img/logo1.png" alt='logo'></a>
             <h1>BOOK.IT</h1>
-            <!-- sign up -->
-            <!-- <div id="sign" onclick = "popwind()"> -->
-            <p>Sign in</p><!-- </div> -->
-            <!-- <div id="frame">
-                <div class="close" onclick="divhide()">x</div>   
-                <div id="formformat">
-                    <h1>Welcome!</h1>
-                    <div id="false"></div>
-                    <form name="myform" onsubmit="loadnew()"> -->
-                        <!-- <center> -->
-                        <!-- <h4>Username:</h4> <input type="text" name="username" id="username">
-                        <h4>Password:</h4> <input type="password" name="password" id="pass"><br>
-                        <input type="submit" value="Log In" style="border-style: solid; border-width: thin; border-color: red; border-radius: 10px; color: red; font-family: Gotham Light; background: black; font-size: 15px; padding: 2%"> -->
-                        <!-- </center> -->
-                    <!-- </form>
-                </div>
-            </div>   -->
+            <!-- sign up button -->
+            <div id="sign">Sign in</div>
             <!-- navigation -->
             <nav>
                 <a href="how.html">How It Works</a>
@@ -35,21 +21,41 @@
                 <a href="#">FAQs</a>
             </nav>
         </header>
+        <!-- sign up box -->
+        <div id="frame">
+            <div id="close">x</div>   
+            <div id="formformat">
+                <h2>Welcome!</h2>
+                <div id="false"></div>
+                <form name="myform">
+                    <h4>Username:</h4> <input type="text" name="username" id="username">
+                    <h4>Password:</h4> <input type="password" name="password" id="pass"><br>
+                    <input type="submit" value="Log In" style="border-style: solid; border-width: thin; border-color: red; border-radius: 10px; color: red; font-family: Gotham Light; background: black; font-size: 15px; padding: 2%" id="submit">
+                </form>
+            </div>
+        </div>  
         <!-- section 1 -->
         <section id="backscreen" style="background-image: url('img/library1.jpg');">
             <h2>People still love paper,<br>people still love books,<br>people still love to collect.<br>You don't collect web sites,<br>you don't collect digital experiences.</h2>
             <h5> - Richard Powell, Creative Director at Monocle</h5>
         </section>
         <!-- section 2 -->
-        <div id="readmore">
+        <div class="readmore">
             <h2> It's not just book swapping! <span style = "color: red">It's a community!</span></h2>
-            <img src="img/signup.png" alt='signup'>
-            <div><b>Sign Up!</b> <br>Log in and explore!</div>
-            <img src="img/booksearch.png" alt='search'>
-            <div><b>Setup!</b><br>Create your wishlists and upload your collections!</div>
-            <img src="img/package.png" alt='package'>
-            <div><b>Start!</b><br>Connect, send and recieve books!</div>
-            <button>How It Works</button>
+            <div id="container2">
+                <div>
+                    <img src="img/signup.png" alt="signup">
+                    <img style="width:12%" src="img/booksearch.png" alt="search">
+                    <img style="width:13%; margin-left: 10%" src="img/package.png" alt="package">
+                </div>
+                <!-- row for instructions -->
+                <div>
+                    <div class="box"><h3>Sign Up!</h3>Log in and explore!</div>
+                    <div class="box"><h3>Setup!</h3>Create your wishlists and upload your collections!</div>
+                    <div class="box"><h3>Start!</h3>Connect, send and recieve books!</div>   
+                </div>
+                <button>How It Works</button>
+            </div>
         </div>
         <!-- section 3 -->
         <div id="books">  
@@ -89,6 +95,7 @@
                 </div>
             </div>
         </div>
+        <!-- section 4 -->
         <div id="updates">
             <h2> <span style="color: red"> Featured </span>for the day! </h2>
             <div id="container">
@@ -115,9 +122,9 @@
             </div>
             <div id="nav-links">    
                 <ul>
-                    <li class="bullet" data-pos="0px"></li>
-                    <li class="bullet" data-pos="-900px"></li>
-                    <li class="bullet" data-pos="-1800px"></li>
+                    <li class="bullet"></li>
+                    <li class="bullet"></li>
+                    <li class="bullet"></li>
                 </ul>
             </div>
         </div>
@@ -131,7 +138,7 @@
                 <a href="references.html">References</a>
             </div>
             <!-- copyrights -->
-            <p>Copyright &amp;copy 2016 Priyal Parikh</p>
+            <p>Copyright &copy; 2016 Priyal Parikh</p>
         </footer>
 
         <script type="text/javascript" src="scripts/app.js"></script>

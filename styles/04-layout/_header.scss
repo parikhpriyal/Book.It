@@ -1,36 +1,35 @@
 header{
-	position: fixed;
-	// position: relative;
-	// float: left;
-	width: 100%;
-	height: 10%;
-	background-color: $color-background;
-	z-index: 1;
-	img{
-		position: relative;
-		width: 8vh;
-		float: left;
-		margin: 0.75%;
-	}
-	h1{
-		position: relative;
-		float: left;
-		color: $color-header;
-		font-family: $font-header;
-		font-size: 2*$font-size-base;
-		line-height: 1.25;
-	}
-	p{
-		position: relative;
-		float: right;
-		color: $border-color;
-		border:{
-			style: solid;
-			width: thick;
-			color: $border-color;
-			radius: 5px;
-		}
-		padding: 5px;
-		margin-right: 1%;
-	}
+    position: fixed;
+    width: 100%;
+    height: 3*$grid-leading;
+    background-color: $color-background;
+    z-index: 20;
+    img{
+        position: relative;
+        width: $grid-column;
+        float: left;
+        margin: 0.5*$grid-gutter-split;
+    }
+    h1{
+        position: relative;
+        float: left;
+        color: $color-header;
+        font-family: $font-header;
+        font-size: 2*$font-size-base;
+        line-height: 3*$grid-leading;
+    }
+    #sign{
+        position: relative;
+        float: right;
+        color: $border-color;
+        border:{
+            style: solid;
+            width: thick;
+            color: $border-color;
+            radius: 5px;
+        }
+        padding: 5px;
+        margin: 1.5*$grid-gutter-split;
+        cursor: pointer;
+    }   
 }
