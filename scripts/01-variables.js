@@ -9,4 +9,5 @@ var button,
     password,
     links,
     windo,
-    bulletLink;
+    bulletLink,
+    sliderWidth;

@@ -226,6 +226,7 @@
         position: fixed;
         width: 18%;
         float: right;
+        background-color: #e2e2e2;
     }
     h2{
         font-family: $font-header;
@@ -236,6 +237,22 @@
         margin: auto;
         font-family: $font-nav;
         border-bottom: 1px solid red;
+    }
+    button{
+        position: relative;
+        width: 2*$grid-gutter-full;
+        margin:{
+            top: $grid-leading;
+            bottom: $grid-leading;
+        }
+        border-radius: 10px;
+        border: none;
+        background-color: red;
+        font-family: $font-header; 
+        font-size: 0.9*$font-size-base;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
     }
 }
 

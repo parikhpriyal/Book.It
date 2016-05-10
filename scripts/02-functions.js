@@ -27,6 +27,8 @@ function loadnew(){
 
 //content slider
 function slideshow(e){
+    sliderWidth = windo.offsetWidth;
+    
     for(var i = 0; i < links.length; i++){
         links[i].classList.remove('active');
     }
@@ -37,11 +39,11 @@ function slideshow(e){
     clickedLink.classList.add('active');
     
     if(0 === bulletLink){
-        windo.style.marginLeft = '0px';
+        windo.style.marginLeft = '0';
     }else if (1 === bulletLink){
-        windo.style.marginLeft = '-720px';
+        windo.style.marginLeft = -1*sliderWidth/3 + 'px';
     }else{
-        windo.style.marginLeft = '-1440px';
+        windo.style.marginLeft = -2*(sliderWidth/3) + 'px';
     }
 }
 
