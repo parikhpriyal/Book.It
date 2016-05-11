@@ -1,6 +1,8 @@
 // =============================================================================
-// All pages
+// Full width
 // =============================================================================
+
+// All pages
 #backscreen{
     position: relative;
     float: left;
@@ -18,12 +20,22 @@
         padding-top: 200px;
         line-height: 2*$grid-leading;
         color: $color-header;
+        animation: opaque 10s linear;
+        animation-direction: alternate;
     }
     h5{
         font-family: $font-nav;
         text-align: center;
         color: $color-header;
         line-height: 3*$grid-leading;
+        animation: opaque 10s linear;
+        animation-direction: alternate;
+    }
+
+    @keyframes opaque{
+        0% { opacity: 0;}
+        100% { opacity: 1;}
+        0% { opacity: 0;}
     }
 }
 
@@ -31,10 +43,7 @@
     display: none;
 }
 
-
-// =============================================================================
 // Signup modal
-// =============================================================================
 #frame{
     visibility: hidden;
     position: fixed;
@@ -81,9 +90,8 @@
         }
     }
 }
-// =============================================================================
+
 // Index
-// =============================================================================
 .readmore{
     position: relative;
     float: left;
@@ -138,13 +146,17 @@
             text-align: center;
             padding: 10px;
             cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                width: 2.5*$grid-gutter-full;
+                color: white;
+            }
         }
+
     }
 }
 
-// =============================================================================
 // How it works
-// =============================================================================
 .container{
     position: relative;
     margin: auto;
@@ -167,9 +179,7 @@
         }
         font-family: $font-nav;
     }
-    // =============================================================================
     // About
-    // =============================================================================
     h3{
         width: 80%;
         margin: auto;
@@ -212,9 +222,7 @@
     }
 }
 
-// =============================================================================
 // Signed in page
-// =============================================================================
 .profile{
     position: relative;
     float: left;
@@ -227,6 +235,7 @@
         width: 18%;
         float: right;
         background-color: #e2e2e2;
+        z-index: 10;
     }
     h2{
         font-family: $font-header;
@@ -253,12 +262,15 @@
         text-align: center;
         padding: 10px;
         cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            width: 2.5*$grid-gutter-full;
+            color: white;
+        }
     }
 }
 
-// =============================================================================
 // Image scroll
-// =============================================================================
 .scroll-feature{
     width: 60%;
     margin: auto;
@@ -279,9 +291,7 @@
     }    
 }
 
-// =============================================================================
 // Content slider
-// =============================================================================
 #window{
     width: 12*$grid-column;
     overflow: hidden;
@@ -306,6 +316,7 @@
             p{
                 float: left;
                 width: 75%;
+                font-family: $font-nav;
                 text-align: justify;
             }
         }
@@ -327,18 +338,323 @@
             border: black 5px solid;
 
             &:hover{
-                background-color: gray;
+                background-color: $color-hover;
             }
 
             &.active{
-                background-color: red;
-                color: red;
+                background-color: $border-color;
+                color: $border-color;
 
                 &:hover{
-                    background-color: red;
+                    background-color: $border-color;
                     color: #FFFFFF;
                 }
             }
         }
+    }
+}
+
+// =============================================================================
+// Tablets and ipads
+// =============================================================================
+
+@media only screen and (max-width: 960px){
+    .scroll-feature{
+        .scroll{
+            img{
+                width: 25%;
+            }
+        }
+    }
+}
+
+// =============================================================================
+// Phones and small screens
+// =============================================================================
+
+@media only screen and (max-width: 720px){
+    // All pages
+    #backscreen{
+        background:{
+            size: 150% 100%;
+        }
+        h2{
+            font-size: 1.5*$font-size-base;
+            padding-top: 180px;
+            line-height: 2*$grid-leading;
+            color: $color-header;
+            animation: opaque 10s linear;
+            animation-direction: alternate;
+        }
+        h5{
+            font-size: $font-size-base;
+            font-family: $font-nav;
+            text-align: center;
+            color: $color-header;
+            line-height: 3*$grid-leading;
+            animation: opaque 10s linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes opaque{
+            0% { opacity: 0;}
+            100% { opacity: 1;}
+            0% { opacity: 0;}
+        }
+    }
+
+    // Signup modal
+    #frame{
+        visibility: hidden;
+        position: fixed;
+        float: right;
+        margin: auto;
+        margin:{
+            left: 70%;
+            top: -100%;
+        }
+        width: 30%;
+        background-color: black;
+        z-index: 10;
+        #close{
+            width: 30px;
+            height: 30px;
+            color: white;
+            float: right;
+            font-family: $font-nav;
+            cursor: pointer;
+        }
+        #formformat{
+            width: 100%;
+            float: left;
+            text-align: center;
+            font-family: $font-nav;
+            h2{
+                text-align: center;
+                color: white;
+                padding: 5%; 
+                font-size: 200%;
+            }
+            h4{
+                text-align: center;
+                color: white;
+                padding-top: 5%;
+                font-size: 100%;
+            }
+            input{
+                margin:{
+                top: 5%;
+                bottom: 5%;
+                }
+                font-size: 100%;
+            }
+        }
+    }
+    
+    // Index
+    .readmore{
+        position: relative;
+        float: left;
+        margin: auto;
+        width: 100%;
+        h2{
+            text-align: center;
+            font-family: $font-header;
+            line-height: 2.5*$grid-leading;
+        }
+        #container2{
+            width: 60%;
+            position: relative;
+            margin: auto;
+            div{
+                width: 100%;
+                float: left;
+                img{
+                    width: 22%;
+                    margin:{
+                        left: 7%;
+                        right: 8%;
+                    }
+                }
+                .box{
+                    position: relative;
+                    width: 25%;
+                    padding: 2%;
+                    float: left;
+                    margin:{
+                        left: 3.5%;
+                    }
+                    text-align: center;
+                    font-size: 0.9*$font-size-base;
+                    font-family: $font-nav;
+                    line-height: 1.5*$font-size-base;
+                }
+            }
+            button{
+                position: relative;
+                width: 2*$grid-gutter-full;
+                margin:{
+                    left: 40%;
+                    top: $grid-leading;
+                    bottom: $grid-leading;
+                }
+                border-radius: 10px;
+                border: none;
+                background-color: red;
+                font-family: $font-header; 
+                font-size: 0.9*$font-size-base;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    width: 2.5*$grid-gutter-full;
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    // How it works
+    .container{
+        position: relative;
+        margin: auto;
+        width: 60%;
+        div{
+            position: relative;
+            margin: auto;
+            width: 60%;
+            line-height: 1.5*$font-size-base;
+            margin:{
+                top: 1.5*$grid-gutter;
+                bottom: 1.5*$grid-gutter;
+            }
+            font-size: 0.9*$font-size-base;
+            img{
+                position: relative;
+                float: left;
+                margin-right: $grid-gutter;
+                width: 2*$grid-leading;
+            }
+            font-family: $font-nav;
+        }
+        
+        // About
+        h3{
+            width: 80%;
+            margin: auto;
+            margin-top: $grid-leading;
+            font-family: $font-nav;
+            font-size: $font-size-base;
+            line-height: 1.5*$font-size-base;
+            text-align: justify;
+        }
+    }
+
+    #books{
+        position: relative;
+        float: left;
+        width: 100%;
+        background-color: #e2e2e2;
+        text-align: center;
+        line-height: 2*$font-size-base;
+        h2{
+            font-family: $font-header;
+            line-height: 2.5*$grid-leading;
+        }
+        h3{
+            width: 80%;
+            margin: auto;
+            font-family: $font-nav;
+            border-bottom: 1px solid red;
+        }
+    }
+
+    #updates{
+        position: relative;
+        float: left;
+        width: 100%;
+        margin: auto;
+        h2{
+            text-align: center;
+            font-family: $font-header;
+            line-height: 2.5*$grid-leading;
+        }
+    }
+
+    // Signed in page
+    .profile{
+        width: 100%;
+
+        #format{
+            position: fixed;
+            width: 18%;
+            float: right;
+            background-color: #e2e2e2;
+            z-index: 10;
+        }
+        h2{
+            font-family: $font-header;
+            line-height: 2.5*$grid-leading;
+        }
+        h3{
+            width: 60%;
+            margin: auto;
+            font-family: $font-nav;
+            border-bottom: 1px solid red;
+        }
+        button{
+            position: relative;
+            width: 2*$grid-gutter-full;
+            margin:{
+                top: $grid-leading;
+                bottom: $grid-leading;
+            }
+            border-radius: 10px;
+            border: none;
+            background-color: red;
+            font-family: $font-header; 
+            font-size: 0.9*$font-size-base;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                width: 2.5*$grid-gutter-full;
+                color: white;
+            }
+        }
+    }
+
+    // Image scroll
+    .scroll-feature{
+        .scroll{
+            img {
+                width: 33%;
+            }
+        }    
+    }
+
+    // Content slider
+    #window{
+        width: 6*$grid-column;
+        #slide-container{
+            width: 18*$grid-column;
+            .slide{
+                width: 6*$grid-column;
+                span{
+                    font-size: $font-size-base;
+                }
+                p{
+                    font-size: $font-size-base;
+                    line-height: 0.9*$grid-leading;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #nav-links{
+        margin-top: 20px;
     }
 }
