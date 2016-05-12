@@ -10,9 +10,7 @@ window.onload = function () {
     close = document.getElementById('close');
     submit = document.getElementById('submit');
 
-    signin.addEventListener('click', function(){
-        popup();
-        console.log(window.location.href);}, false);
+    signin.addEventListener('click', popup, false);
     close.addEventListener('click', closeup, false);
     submit.addEventListener('click', loadnew, false);
 
@@ -39,5 +37,4 @@ window.onload = function () {
     //open how it works page using button
     button = document.getElementsByTagName('button')[0];
     button.addEventListener('click', pageNew, false);
-
 };

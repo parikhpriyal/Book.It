@@ -24,21 +24,20 @@ function closeup(){
 }
 
 function loadnew(){
-    // if(1 === check){
-    //     console.log('logout');
-    // }
-    // else{
-    name =  document.getElementById('username').value;
-    password =  document.getElementById('pass').value;
-    if(name == 'priyal' && password == 'test123'){
-        document.myform.action = 'sign.html';
+    if(window.location.href == 'http://localhost:9000/sign.html?' || window.location.href == 'http://localhost:9000/sign.html?username=priyal&password=test123'){
+        document.myform.action = 'index.html';
+    }else{
+        name =  document.getElementById('username').value;
+        password =  document.getElementById('pass').value;
+        if(name == 'priyal' && password == 'test123'){
+            document.myform.action = 'sign.html';
+        }
+        else{
+            modal.style.display = 'block';
+            document.getElementById('false').innerHTML = 'Invalid username or password';
+            password.value = '';
+        }
     }
-    else{
-        modal.style.display = 'block';
-        document.getElementById('false').innerHTML = 'Invalid username or password';
-        password.value = '';
-    }
-    // }
 }
 
 //showMenu show @media screen < 720px
