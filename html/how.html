@@ -9,31 +9,37 @@
     </head>
     <body>
         <!-- header and navigation -->
-       <header>
+        <header>
             <!-- logo -->
             <a href="index.html"><img id="logo" src="img/logo1.png" alt='logo'></a>
             <h1>BOOK.IT</h1>
-            <!-- sign up -->
+            <!-- sign up button -->
             <div id="sign">Sign in</div>
             <!-- navigation -->
+            <div id="nav-border">
+                <span id="scroll-down"></span>
+            </div>
             <nav>
                 <a href="how.html">How It Works</a>
                 <a href="#">Browse</a>
                 <a href="#">FAQs</a>
             </nav>
         </header>
-        <div id="frame">
-            <div id="close">x</div>   
-            <div id="formformat">
-                <h2>Welcome!</h2>
-                <!-- <div id="false"></div> -->
-                <form name="myform" onsubmit="loadnew()">
-                    <h4>Username:</h4> <input type="text" name="username" id="username">
-                    <h4>Password:</h4> <input type="password" name="password" id="pass"><br>
-                    <input type="submit" value="Log In" style="border-style: solid; border-width: thin; border-color: red; border-radius: 10px; color: red; font-family: Gotham Light; background: black; font-size: 15px; padding: 2%">
-                </form>
-            </div>
-        </div>        
+        <!-- sign up box -->
+        <div id="modal">
+            <div id="frame">
+                <div id="close">x</div>   
+                <div id="formformat">
+                    <h2>Welcome!</h2>
+                    <div id="false"></div>
+                    <form name="myform">
+                        <h4>Username:</h4> <input type="text" name="username" id="username">
+                        <h4>Password:</h4> <input type="password" name="password" id="pass"><br>
+                        <input type="submit" value="Log In" style="border-style: solid; border-width: thin; border-color: red; border-radius: 10px; color: red; font-family: Gotham Light; background: black; font-size: 15px; padding: 2%" id="submit">
+                    </form>
+                </div>
+            </div>  
+        </div>       
         <!-- section 1 -->
         <div id="backscreen" style="background-image: url('img/hills.jpg');">
             <div>
@@ -43,8 +49,8 @@
         </div>
         <!-- section 2 -->
         <div class="readmore">
+            <h2> When you join the <span style = "color: red">Community!</span></h2>
             <div class="container">
-                <h2> When you join the <span style = "color: red">Community!</span></h2>
                 <div><img class="icons" src="img/lock.png" alt="signup">
                 <b>Signup or Login</b><br>Create a username and password</div>
                 <div><img class="icons" src="img/profile.png" alt="search">

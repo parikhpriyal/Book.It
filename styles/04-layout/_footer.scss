@@ -28,3 +28,19 @@ footer{
         margin-top: 1%;
     }
 }
+
+@media only screen and (max-width: 720px){
+    footer{
+        div{
+            width: 80%;
+            a{
+                font-size: 0.6*$font-size-base;
+                padding: 2.5%;
+            }
+        }
+        p{
+            font-size: 0.6*$font-size-base;
+            padding: 1%;
+        }
+    }
+}

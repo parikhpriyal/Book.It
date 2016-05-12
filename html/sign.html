@@ -16,6 +16,9 @@
             <!-- sign up button -->
             <div id="sign">Hello Priyal</div>
             <!-- navigation -->
+            <div id="nav-border">
+                <span id="scroll-down"></span>
+            </div>
             <nav>
                 <a href="how.html">How It Works</a>
                 <a href="#">Browse</a>
@@ -23,31 +26,33 @@
             </nav>
         </header>
         <!-- sign up box -->
-        <div id="frame">
-            <div id="close">x</div>   
-            <div id="formformat">
-                <h2>Welcome!</h2>
-                <div id="false"></div>
-                <form name="myform">
-                    <h4>Username:</h4> <input type="text" name="username" id="username">
-                    <h4>Password:</h4> <input type="password" name="password" id="pass"><br>
-                    <input type="submit" value="Log In" style="border-style: solid; border-width: thin; border-color: red; border-radius: 10px; color: red; font-family: Gotham Light; background: black; font-size: 15px; padding: 2%" id="submit">
-                </form>
-            </div>
+        <div id="modal">
+            <div id="frame">
+                <div id="close">x</div>   
+                <div id="formformat">
+                    <h2>Welcome!</h2>
+                    <div id="false"></div>
+                    <form name="myform">
+                        <h4>Username:</h4> <input type="text" name="username" id="username">
+                        <h4>Password:</h4> <input type="password" name="password" id="pass"><br>
+                        <input type="submit" value="Log In" style="border-style: solid; border-width: thin; border-color: red; border-radius: 10px; color: red; font-family: Gotham Light; background: black; font-size: 15px; padding: 2%" id="submit">
+                    </form>
+                </div>
+            </div>  
         </div>  
         <!-- section 1 -->
-        <div style="width: 100%; height: 72px; position: relative; float: left;"></div>
+        <div id="dummy"></div>
         <!-- section 2 -->
         <div class="profile" >  
-            <div style="float: right; width: 18%; margin-top: 3%">
+            <div id="bord">
                 <div id="format">
-                    <img src="img/dp.jpeg" style="width:90%; margin-top: 20px; margin-left: 2%" alt="profile"><br>
+                    <img src="img/dp.jpeg" alt="profile">
                     Username: Squiggy<br>
                     Book.It Age: 3 months<br>
                     Reputation Level: 1<br>
                     Wished: 5<br>
                     Swapped: 3<br>
-                    <button style="margin-top: 120px">Edit Profile</button>
+                    <button>Edit Profile</button>
                 </div>
             </div>
             <h3>Your wishlist</h3>
@@ -88,7 +93,7 @@
             <button>Add swaps</button>
         </div>
         <!-- section 2 -->
-        <div class="profile">  
+        <div class="profile" id="windows">  
             <h3>Your Groups</h3>
             <div id="window" style="margin-top: 20px">
                 <div id="slide-container">
@@ -120,7 +125,7 @@
                 </ul>
             </div>
 
-            <button>Click to view all</button>
+            <button>View all</button>
         </div>
         <!-- footer -->
         <footer>

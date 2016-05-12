@@ -1,8 +1,10 @@
 window.onload = function () {
     'use strict';
 
+    mq = window.matchMedia('(max-width: 720px)');
+
     //sign up modal show
-    frame = document.getElementById('frame');
+    modal = document.getElementById('modal');
     signin = document.getElementById('sign'); 
     close = document.getElementById('close');
     submit = document.getElementById('submit');
@@ -16,7 +18,7 @@ window.onload = function () {
     nav = document.getElementsByTagName('nav')[0];
 
     navBorder.addEventListener('click', showMenu, false);
-    open = false;
+    down = false;
 
     //content slider 
     links = document.querySelectorAll('#nav-links > ul > li');

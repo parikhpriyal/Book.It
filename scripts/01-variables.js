@@ -2,7 +2,7 @@
 
 var button,
     signin,
-    frame,
+    modal,
     close,
     submit,
     name,
@@ -13,6 +13,5 @@ var button,
     sliderWidth,
     navBorder,
     nav,
-    open;
-
-// var open = false;
+    down,
+    mq;

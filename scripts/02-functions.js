@@ -1,15 +1,26 @@
 //open modal for sign in
 function popup(){
-    frame.style.visibility = 'visible';
-    frame.style.marginTop = '72px';
-    frame.style.transition = 'all 500ms ease-in-out';
+    if(mq.matches){
+        modal.style.visibility = 'visible';
+        modal.style.zIndex = '30';
+    }
+    else{
+        modal.style.visibility = 'visible';
+        modal.style.marginTop = '72px';
+        modal.style.transition = 'all 500ms ease-in-out';    
+    }
 }
 
 //close signin modal
 function closeup(){
-    frame.style.visibility = 'hidden';
-    frame.style.marginTop = '-100%';
-    frame.style.transition = 'all 500ms ease-in-out';   
+    if(mq.matches){
+        modal.style.visibility = 'hidden';
+    }
+    else{
+        modal.style.visibility = 'hidden';
+        modal.style.marginTop = '-100%';
+        modal.style.transition = 'all 500ms ease-in-out';   
+    }
 }
 
 function loadnew(){
@@ -18,21 +29,15 @@ function loadnew(){
     if(name == 'priyal' && password == 'test123')
         document.myform.action = 'sign.html';
     else{
-        frame.style.display = 'block';
+        modal.style.display = 'block';
         document.getElementById('false').innerHTML = 'Invalid username or password';
         password.value = '';
     }
 }
 
-function popup(){
-    frame.style.visibility = 'visible';
-    frame.style.marginTop = '72px';
-    frame.style.transition = 'all 500ms ease-in-out';
-}
-
 //showMenu show @media screen < 720px
 function showMenu(){
-    if(!open){
+    if(!down){
         nav.style.marginTop = '0';
         nav.style.transition = 'all 0.5s ease-in-out';
         navBorder.style.transition = 'transform .3s linear';
@@ -44,7 +49,7 @@ function showMenu(){
         navBorder.style.transition = 'transform .3s linear';
         navBorder.style.transform = 'rotate(0deg)';
     }
-    open = !open;   
+    down = !down;   
 }
 
 //content slider
@@ -72,4 +77,4 @@ function slideshow(e){
 // open how.html in new window on button click
 function pageNew(){
     window.open('how.html', '_self', false);
-}
+}   
