@@ -1,7 +1,8 @@
 window.onload = function () {
     'use strict';
 
-    mq = window.matchMedia('(max-width: 720px)');
+    mq720 = window.matchMedia('(max-width: 720px)');
+    mq960 = window.matchMedia('(max-width: 720px)');
 
     //sign up modal show
     modal = document.getElementById('modal');
@@ -9,7 +10,9 @@ window.onload = function () {
     close = document.getElementById('close');
     submit = document.getElementById('submit');
 
-    signin.addEventListener('click', popup, false);
+    signin.addEventListener('click', function(){
+        popup();
+        console.log(window.location.href);}, false);
     close.addEventListener('click', closeup, false);
     submit.addEventListener('click', loadnew, false);
 

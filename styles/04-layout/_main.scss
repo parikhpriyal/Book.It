@@ -237,15 +237,18 @@
     width: 80%;
     text-align: center;
     line-height: 2*$font-size-base;
+    margin: auto;
 
     #bord{
         float: right; 
         width: 18%; 
+        margin: auto;
         margin-top: 3%;
+        font-family: $font-nav;
+        font-size: $font-size-base;
         #format{
             position: fixed;
             width: 18%;
-            float: right;
             background-color: #e2e2e2;
             z-index: 10;
             img{
@@ -381,16 +384,142 @@
 // =============================================================================
 
 @media only screen and (max-width: 960px){
+    // Signup modal
+    #modal{
+        visibility: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.5);
+        margin:{
+            left: 0;
+            top: 0;
+        }
+        #frame{
+            position: fixed;
+            margin: auto;
+            width: 80%;
+            background-color: black;
+            margin:{
+                left: 10%;
+                top: 50%;   
+            }
+        }
+    }
+    // Signup modal
+    #modal{
+        visibility: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.5);
+        margin:{
+            left: 0;
+            top: 0;
+        }
+        #frame{
+            position: fixed;
+            margin: auto;
+            width: 80%;
+            background-color: black;
+            margin:{
+                left: 10%;
+                top: 40%;   
+            }
+        }
+    }
+    // Index
+    .readmore{
+        #container2{
+            button{
+                margin:{
+                    left: 35%;
+                }
+            }
+        }
+    }
+    // How it works
+    .container{
+        width: 80%;
+        div{
+            width: 100%;
+            line-height: 1.25*$font-size-base;
+            font-size: $font-size-base;
+            text-align: justify;
+            img{
+                width: 1.9*$grid-leading;
+            }
+        }
+        
+        // About
+        h3{
+            width: 100%;
+            font-size: $font-size-base;
+        }
+    }
+    //Signed in page
     .profile{
+        width: 90%;
+        line-height: 2*$font-size-base;
+        text-align: center;
+
+        #bord{
+            #format{
+                position: fixed;
+                width: 18%;
+                text-align: center;
+                padding: 2%;
+                font-size: 0.75*$font-size-base;
+                img{
+                    margin-left: 5%;
+                }
+            }
+        }
         button{
             width: 1.5*$grid-gutter-full;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                width: 2.5*$grid-gutter-full;
+                color: white;
+            }
         }
-    }z
+    }
+    //Scroll images
     .scroll-feature{
         .scroll{
             img{
                 width: 25%;
             }
+        }
+    }
+    // Content slider
+    #window{
+        width: 7*$grid-column;
+        #slide-container{
+            width: 21*$grid-column;
+            .slide{
+                width: 7*$grid-column;
+                span{
+                    font-size: $font-size-base;
+                }
+                p{
+                    font-size: $font-size-base;
+                    line-height: 0.9*$grid-leading;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #nav-links{
+        margin-top: 20px;
+        &:hover{
+            background-color: $color-hover;
+        }
+        &.active{
+            background-color: $border-color;
+            color: $border-color;
         }
     }
 }
@@ -436,6 +565,7 @@
             }
         }
     }
+
     // Index
     .readmore{
         h2{
@@ -524,10 +654,12 @@
             position: relative;
             float: left;
             width: 100%;
+            margin: auto;
+            background-color: $color-header;
             #format{
                 position: relative;
-                float: left;
-                width: 100%;
+                // float: left;
+                width: 80%;
                 margin: auto;
                 font-size: $font-size-base;
                 font-family: $font-nav;
@@ -537,15 +669,17 @@
                 img{
                     width: 40%; 
                     float: left;
+                    margin: auto;
                     margin-top: 10px; 
-                    margin-left: 0.8*$grid-gutter;
+                    // margin-left: 20%;
                     margin-right: 0.8*$grid-gutter;
                 }
                 button{
                     position: relative;
+                    margin: auto;
                     margin:{
                         top: 10px;
-                        // left: 35%;
+                        left: 20%;
                         bottom: $grid-leading;
                     }
                 }
@@ -592,5 +726,12 @@
     }
     #nav-links{
         margin-top: 20px;
+        &:hover{
+            background-color: $color-hover;
+        }
+        &.active{
+            background-color: $border-color;
+            color: $border-color;
+        }
     }
 }

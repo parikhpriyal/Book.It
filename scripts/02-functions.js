@@ -1,6 +1,6 @@
 //open modal for sign in
 function popup(){
-    if(mq.matches){
+    if(mq720.matches || mq960.matches){
         modal.style.visibility = 'visible';
         modal.style.zIndex = '30';
     }
@@ -13,7 +13,7 @@ function popup(){
 
 //close signin modal
 function closeup(){
-    if(mq.matches){
+    if(mq720.matches || mq960.matches){
         modal.style.visibility = 'hidden';
     }
     else{
@@ -24,15 +24,21 @@ function closeup(){
 }
 
 function loadnew(){
+    // if(1 === check){
+    //     console.log('logout');
+    // }
+    // else{
     name =  document.getElementById('username').value;
     password =  document.getElementById('pass').value;
-    if(name == 'priyal' && password == 'test123')
+    if(name == 'priyal' && password == 'test123'){
         document.myform.action = 'sign.html';
+    }
     else{
         modal.style.display = 'block';
         document.getElementById('false').innerHTML = 'Invalid username or password';
         password.value = '';
     }
+    // }
 }
 
 //showMenu show @media screen < 720px

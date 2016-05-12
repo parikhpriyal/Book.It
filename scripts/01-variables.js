@@ -14,4 +14,5 @@ var button,
     navBorder,
     nav,
     down,
-    mq;
+    mq720,
+    mq960;
