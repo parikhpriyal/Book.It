@@ -22,24 +22,18 @@ nav{
 
 @media only screen and (max-width: 720px){
     nav{
-        display: none;
-        position: relative;
-        float: right;
-        width: 3.5*$grid-gutter-full;
-        line-height: 2*$grid-leading;
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        margin-top: -100%;
         a{
-            float: left;
-            color: $color-header;
+            width: 100%;
+            text-align: center;
             font-family: $font-nav;
-            font-size: $font-size-base;
             padding:{
-                top: $font-size-base;
-                bottom: $font-size-base;
-                right: $font-size-base;
-            } 
-            &:hover{
-                font-weight: bold;
-                color: $color-hover;
+                top: 0;
+                bottom: 0;
+                right: 0;
             }
         }
     }

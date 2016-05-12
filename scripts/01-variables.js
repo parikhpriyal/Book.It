@@ -10,4 +10,9 @@ var button,
     links,
     windo,
     bulletLink,
-    sliderWidth;
+    sliderWidth,
+    navBorder,
+    nav,
+    open;
+
+// var open = false;

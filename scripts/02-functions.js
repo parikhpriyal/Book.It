@@ -22,7 +22,29 @@ function loadnew(){
         document.getElementById('false').innerHTML = 'Invalid username or password';
         password.value = '';
     }
+}
 
+function popup(){
+    frame.style.visibility = 'visible';
+    frame.style.marginTop = '72px';
+    frame.style.transition = 'all 500ms ease-in-out';
+}
+
+//showMenu show @media screen < 720px
+function showMenu(){
+    if(!open){
+        nav.style.marginTop = '0';
+        nav.style.transition = 'all 0.5s ease-in-out';
+        navBorder.style.transition = 'transform .3s linear';
+        navBorder.style.transform = 'rotate(180deg)';    
+    }
+    else{
+        nav.style.marginTop = '-100%';
+        nav.style.transition = 'all 0.5s ease-in-out';
+        navBorder.style.transition = 'transform .3s linear';
+        navBorder.style.transform = 'rotate(0deg)';
+    }
+    open = !open;   
 }
 
 //content slider

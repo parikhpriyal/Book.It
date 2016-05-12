@@ -11,6 +11,13 @@ window.onload = function () {
     close.addEventListener('click', closeup, false);
     submit.addEventListener('click', loadnew, false);
 
+    //showMenu show @media screen < 720px
+    navBorder = document.getElementById('nav-border');
+    nav = document.getElementsByTagName('nav')[0];
+
+    navBorder.addEventListener('click', showMenu, false);
+    open = false;
+
     //content slider 
     links = document.querySelectorAll('#nav-links > ul > li');
     windo = document.getElementById('slide-container');
