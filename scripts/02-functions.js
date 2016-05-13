@@ -24,7 +24,8 @@ function closeup(){
 }
 
 function loadnew(){
-    if(window.location.href == 'http://localhost:9000/sign.html?' || window.location.href == 'http://localhost:9000/sign.html?username=priyal&password=test123'){
+    if(window.location.href == 'http://localhost:9000/sign.html?' 
+        || window.location.href == 'http://localhost:9000/sign.html?username=priyal&password=test123'){
         document.myform.action = 'index.html';
     }else{
         name =  document.getElementById('username').value;
@@ -34,7 +35,6 @@ function loadnew(){
         }
         else{
             modal.style.display = 'block';
-            document.getElementById('false').innerHTML = 'Invalid username or password';
             password.value = '';
         }
     }
@@ -59,6 +59,7 @@ function showMenu(){
 
 //content slider
 function slideshow(e){
+    links[bulletLink].classList.add('active');
     sliderWidth = windo.offsetWidth;
     
     for(var i = 0; i < links.length; i++){

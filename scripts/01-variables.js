@@ -15,5 +15,4 @@ var button,
     nav,
     down,
     mq720,
-    mq960,
-    logout;
+    mq960;

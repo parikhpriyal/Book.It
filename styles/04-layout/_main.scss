@@ -6,8 +6,8 @@
 #backscreen{
     position: relative;
     float: left;
-    width: 100%;
-    height: 28.75*$grid-leading;
+    width: 100vw;
+    height: 92vh;
     background-color: $color-background;
     background:{
         repeat: no-repeat;
@@ -98,14 +98,15 @@
     position: relative;
     float: left;
     margin: auto;
-    width: 100%;
+    width: 100vw;
     h2{
         text-align: center;
         font-family: $font-header;
         line-height: 2.5*$grid-leading;
+        margin-bottom: 1%;
     }
     #container2{
-        width: 60%;
+        width: 60vw;
         position: relative;
         margin: auto;
         div{
@@ -384,6 +385,9 @@
 // =============================================================================
 
 @media only screen and (max-width: 960px){
+    #backscreen{
+        height: 95vh;
+    }
     // Signup modal
     #modal{
         visibility: hidden;
@@ -531,6 +535,7 @@
 @media only screen and (max-width: 720px){
     // All pages
     #backscreen{
+        height: 90vh;
         background:{
             size: 150% 100%;
         }
