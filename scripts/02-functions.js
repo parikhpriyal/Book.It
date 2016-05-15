@@ -24,8 +24,14 @@ function closeup(){
 }
 
 function loadnew(){
-    if(window.location.href == 'http://localhost:9000/sign.html?' 
-        || window.location.href == 'http://localhost:9000/sign.html?username=priyal&password=test123'){
+    var page = window.location.href;
+    page = page.replace('/', ',');
+    page = page.replace('/', ',');
+    page = page.replace('/', ',');
+    page = page.replace('?', ',');
+    var page_array = page.split(',');   
+
+    if(page_array[3] == 'sign.html'){
         document.myform.action = 'index.html';
     }else{
         name =  document.getElementById('username').value;
